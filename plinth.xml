@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 	<remote  name="github" fetch="git://github.com" />
-	<remote  name="github-private" fetch="ssh://git@github.com"/>
-	<default remote="github-private" sync-j="2" sync-s="true"/>
+	<remote  name="github-private" fetch="ssh://git@github.com/hisilicon/"/>
+	<default remote="github-private" sync-j="1" sync-s="true" revision="master"/>
 
 	<project path="plinth/kernel-dev" name="kernel-dev"/>
-	<project path="plinth/uefi" name="uefi"/>
-	<project path="plinth/plinth-uefi" name="plinth-uefi"/>
-	<project path="plinth/uefi/OpenPlatformPkg" name="OpenPlatformPkg"/>
-	<project path="plinth/qemu" name="qemu"/>
-	<project path="plinth/libvirt" name="libvirt"/>
-	<project path="plinth/libkcapi" name="libkcapi"/>
-	<project path="plinth/rasdaemon" name="rasdaemon"/>
-	<project path="plinth/ras-tool" name="ras-tool"/>
-	<project path="plinth/plinth-autotest" name="plinth-autotest"/>
-	<project path="plinth/plinth-roce" name="plinth-roce"/>
+	<project path="plinth/UEFI" name="UEFI"/>
+	project path="plinth/plinth-uefi" name="plinth-uefi"/>
+	<project path="plinth/UEFI/OpenPlatformPkg" name="OpenPlatformPkg"/>
+	<project path="plinth/app/qemu" name="qemu"/>
+	<!--project path="plinth/libvirt" name="libvirt"/-->
+	<project path="plinth/lib/libkcapi" name="libkcapi"/>
+	<project path="plinth/app/rasdaemon" name="rasdaemon"/>
+	<project path="plinth/app/ras-tool" name="ras-tool"/>
+	<project path="plinth/test/plinth-autotest" name="plinth-autotest"/>
+	<project path="plinth/app/plinth-roce" name="plinth-roce"/>
 
 </manifest>
