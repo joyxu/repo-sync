@@ -1,4 +1,5 @@
 cd ~/develop/qemu
-git fetch --prune
-git push --prune hisi +refs/remotes/origin/*:refs/heads/* +refs/tags/*:refs/tags/*
+git fetch origin --prune
+git fetch hisi
+git push hisi +refs/remotes/origin/*:refs/heads/* +refs/tags/*:refs/tags/*
 cd ~/
