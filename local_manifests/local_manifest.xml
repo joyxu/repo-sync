@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-	<remote name="joyx" fetch="https://github.com/joyxu" />
+	<remote name="joyx" fetch="https://github.com" review="gerrithub.io"/>
 
 	<remove-project name="kernel-dev" />
 	<remove-project name="qemu" />
@@ -12,5 +12,5 @@
 	<remove-project name="plinth-roce" />
 
 	<remove-project name="UEFI" />
-	<project path="plinth/UEFI" name="UEFI-test" remote="joyx" revision="test" />
+	<project path="plinth/UEFI" name="joyxu/UEFI-test" remote="joyx" revision="test" />
 </manifest>
