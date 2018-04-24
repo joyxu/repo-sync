@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+	<remote name="joyx" fetch="https://github.com/joyxu" />
+
+	<remove-project name="kernel-dev" />
+	<remove-project name="qemu" />
+	<remove-project name="libkcapi" />
+	<remove-project name="rasdaemon" />
+	<remove-project name="ras-tool" />
+	<remove-project name="plinth-autotest" />
+	<remove-project name="plinth-roce" />
+
+	<remove-project name="UEFI" />
+	<project path="plinth/UEFI" name="UEFI-test" remote="joyx" revision="test" />
+</manifest>

@@ -6,7 +6,7 @@
 
 	<project path="plinth/kernel-dev" name="kernel-dev"/>
 	<project path="plinth/UEFI" name="UEFI"/>
-	project path="plinth/plinth-uefi" name="plinth-uefi"/>
+	<!--project path="plinth/plinth-uefi" name="plinth-uefi"/-->
 	<project path="plinth/UEFI/OpenPlatformPkg" name="OpenPlatformPkg"/>
 	<project path="plinth/app/qemu" name="qemu"/>
 	<!--project path="plinth/libvirt" name="libvirt"/-->
