@@ -1,0 +1,34 @@
+deps_config := \
+	package/skeleton-init-sysv/Config.in \
+	package/skeleton-init-systemd/Config.in \
+	package/skeleton-init-none/Config.in \
+	package/skeleton-init-common/Config.in \
+	package/skeleton-custom/Config.in \
+	package/skeleton/Config.in \
+	package/busybox/Config.in \
+	package/Config.in \
+	system/Config.in \
+	arch/Config.in.arm \
+	arch/Config.in \
+	Config.in
+
+/home/joyx/develop/repo-sync/mk-test/output/build/buildroot-config/auto.conf: \
+	$(deps_config)
+
+ifneq "$(BR2_DEFCONFIG)" ""
+/home/joyx/develop/repo-sync/mk-test/output/build/buildroot-config/auto.conf: FORCE
+endif
+ifneq "$(HOST_GCC_VERSION)" "4 8"
+/home/joyx/develop/repo-sync/mk-test/output/build/buildroot-config/auto.conf: FORCE
+endif
+ifneq "$(BUILD_DIR)" "/home/joyx/develop/repo-sync/mk-test/output/build"
+/home/joyx/develop/repo-sync/mk-test/output/build/buildroot-config/auto.conf: FORCE
+endif
+ifneq "$(HOSTARCH)" "x86_64"
+/home/joyx/develop/repo-sync/mk-test/output/build/buildroot-config/auto.conf: FORCE
+endif
+ifneq "$(BR2_VERSION_FULL)" ""
+/home/joyx/develop/repo-sync/mk-test/output/build/buildroot-config/auto.conf: FORCE
+endif
+
+$(deps_config): ;
